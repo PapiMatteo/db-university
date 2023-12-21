@@ -16,7 +16,7 @@ ORDER BY `cfu` ASC;
 
 SELECT *, DATE_FORMAT(FROM_DAYS(DATEDIFF(NOW(), `date_of_birth`)), '%Y') + 0 AS `age`
 FROM `students`
-WHERE DATE_FORMAT(FROM_DAYS(DATEDIFF(NOW(), `date_of_birth`)), '%Y') + 0 >= 30
+WHERE DATE_FORMAT(FROM_DAYS(DATEDIFF(NOW(), `date_of_birth`)), '%Y') + 0 > 30
 ORDER BY `age` ASC;
 
 -- 4. Selezionare tutti i corsi del primo semestre del primo anno di un qualsiasi corso dilaurea (286)
